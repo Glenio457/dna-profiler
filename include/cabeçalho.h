@@ -1,5 +1,5 @@
-#ifndef PRINT_H
-#define PRINT_H
+#ifndef CABECALHO_H
+#define CABECALHO_H
 
 #include <iostream>
 
