@@ -16,8 +16,8 @@ void printcabeçalho(std::string csv, std::string txt){
 
     std::cout << BLUE << "This program loads a DNA database and an unknown" << std::endl << "DNA sequence and tries to find a  match between" << std::endl << "the input DNA sequence and the DNA database." << RESET << std::endl;
 
-    std::cout << std::endl << "DNA base used: [" << RED << csv << RESET << "]" << std::endl;
-    std::cout << std::endl << "DNA sequence to be analyzed: [" << RED << txt << RESET << "]" << std::endl << std::endl << std::endl;
+    std::cout << std::endl << "[+] DNA base used: [" << RED << csv << RESET << "]" << std::endl;
+    std::cout << std::endl << "[+] DNA sequence to be analyzed: [" << RED << txt << RESET << "]" << std::endl << std::endl << std::endl;
 }
 
 #endif
