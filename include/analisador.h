@@ -13,7 +13,7 @@ private:
     std::vector<std::pair<std::string, std::vector<std::string>>> maiorNumeroSequenciasString;
 
 public:
-    AnalisadorDados() = default;
+    AnalisadorDados() {}
     std::vector<std::pair<std::string, std::vector<std::string>>> obterMaiorNumeroSequenciasString(const LeitorCSV& leitorCSV, const LeitorTXT& leitorTXT);
     
     const std::vector<std::pair<std::string, std::vector<std::string>>>& getMaiorNumeroSequenciasString() const;
