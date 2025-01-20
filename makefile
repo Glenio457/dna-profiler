@@ -1,20 +1,28 @@
-dna_profiler: main.o analisador.o comparador.o leitorcsv.o leitortxt.o
-	g++ -o dna_profiler main.o analisador.o comparador.o leitorcsv.o leitortxt.o
+all: bin/dna_profiler
 
-main.o: src/main.cpp include/comparador.h include/analisador.h include/leitorcsv.h include/leitortxt.h
-	g++ -c src/main.cpp
+bin/dna_profiler: bin/main.o bin/analisador.o bin/comparador.o bin/leitorcsv.o bin/leitortxt.o
+	mkdir -p bin
+	g++ -o bin/dna_profiler bin/main.o bin/analisador.o bin/comparador.o bin/leitorcsv.o bin/leitortxt.o
 
-analisador.o: src/analisador.cpp include/analisador.h
-	g++ -c src/analisador.cpp
+bin/main.o: src/main.cpp include/comparador.h include/analisador.h include/leitorcsv.h include/leitortxt.h
+	mkdir -p bin
+	g++ -c src/main.cpp -o bin/main.o
 
-comparador.o: src/comparador.cpp include/comparador.h
-	g++ -c src/comparador.cpp
+bin/analisador.o: src/analisador.cpp include/analisador.h
+	mkdir -p bin
+	g++ -c src/analisador.cpp -o bin/analisador.o
 
-leitorcsv.o: src/leitorcsv.cpp include/leitorcsv.h
-	g++ -c src/leitorcsv.cpp
+bin/comparador.o: src/comparador.cpp include/comparador.h
+	mkdir -p bin
+	g++ -c src/comparador.cpp -o bin/comparador.o
 
-leitortxt.o: src/leitortxt.cpp include/leitortxt.h
-	g++ -c src/leitortxt.cpp
+bin/leitorcsv.o: src/leitorcsv.cpp include/leitorcsv.h
+	mkdir -p bin
+	g++ -c src/leitorcsv.cpp -o bin/leitorcsv.o
 
-clean:dna_profiler
-	rm -f dna_profiler *.o
+bin/leitortxt.o: src/leitortxt.cpp include/leitortxt.h
+	mkdir -p bin
+	g++ -c src/leitortxt.cpp -o bin/leitortxt.o
+
+clean:
+	rm -rf bin
