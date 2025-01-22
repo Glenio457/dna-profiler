@@ -1,8 +1,9 @@
-#include "../include/leitortxt.h"
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <sstream> 
+
+#include "../include/leitortxt.h"
 
 bool LeitorTXT::lerTXT(const std::string& nomeArquivo) {
     std::ifstream arquivo(nomeArquivo);

@@ -1,9 +1,10 @@
-#include "../include/analisador.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
 #include <sstream>
+
+#include "../include/analisador.h"
 
 std::vector<std::pair<std::string, std::vector<std::string>>> AnalisadorDados::obterMaiorNumeroSequenciasString(const LeitorCSV& leitorCSV, const LeitorTXT& leitorTXT) {
     maiorNumeroSequenciasString.clear();

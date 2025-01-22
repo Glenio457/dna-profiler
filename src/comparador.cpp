@@ -1,7 +1,8 @@
-#include "../include/comparador.h"
 #include <iostream>
 #include <vector>
 #include <sstream>
+
+#include "../include/comparador.h"
 
 void Comparador::compararEImprimir(const LeitorCSV& leitorCSV, const std::vector<std::pair<std::string, std::vector<std::string>>>& maiorNumeroSequenciasString, std::ostream& os) {
     const auto& matriz = leitorCSV.getMatriz();

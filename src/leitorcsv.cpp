@@ -1,7 +1,8 @@
-#include "../include/leitorcsv.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
+
+#include "../include/leitorcsv.h"
 
 LeitorCSV::LeitorCSV(const std::string& nomeArquivo) {
     lerCSV(nomeArquivo);

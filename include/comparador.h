@@ -5,6 +5,7 @@
 #include <vector> 
 #include <utility> 
 #include <iostream> 
+
 #include "leitorcsv.h" 
 
 class Comparador {
