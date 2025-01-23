@@ -8,14 +8,14 @@ void Comparador::compararEImprimir(const LeitorCSV& leitorCSV, const std::vector
     const auto& matriz = leitorCSV.getMatriz();
 
     if (matriz.size() <= 1 || maiorNumeroSequenciasString.empty()) {
-        os << "Matriz CSV com poucas linhas ou vetor de sequencias vazio." << std::endl;
+        std::cout << "Matriz CSV com poucas linhas ou vetor de sequencias vazio." << std::endl;
         return;
     }
 
     bool encontrouCorrespondencia = false;
 
     if (maiorNumeroSequenciasString.empty() && !leitorCSV.getMatriz().empty() && !leitorCSV.getMatriz()[0].empty()) {
-        std::cout << "Nenhum termo da primeira linha do CSV (a partir da segunda coluna) foi encontrado no TXT." << std::endl;
+        std::cout << "Nenhum dos str foi encontrado no dna." << std::endl;
     } else {
 
         for (size_t i = 1; i < leitorCSV.getMatriz().size(); ++i) {
