@@ -7,20 +7,6 @@ Ele lê duas sequências em formato de texto, compara posição por posição e 
 
 ## ⚙️ Como funciona
 
-1. O programa recebe **dois arquivos de texto** como entrada.  
-   - Cada arquivo deve conter uma sequência de DNA (usando apenas as bases `A`, `T`, `C`, `G`).  
-   - Exemplo (`dna1.txt`):  
-     ```
-     ATGCGTAC
-     ```  
-     Exemplo (`dna2.txt`):  
-     ```
-     ATGCCGAC
-     ```
+ O código recebe duas entradas, uma sendo um banco de dados CSV e outra sendo um arquivo txt, e a partir disso, ele verifica se a "amostra de dna" apresenta correspondência com uma pessoa no banco de dados ou não.
 
-2. O algoritmo percorre as duas sequências **caractere por caractere**, contando:  
-   - Quantas bases são **iguais na mesma posição**.  
-   - O tamanho total da comparação (considera o comprimento da menor sequência).
-
-3. A similaridade é calculada pela fórmula:
-
+## Execução:
