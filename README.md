@@ -17,3 +17,5 @@ x = arquivo csv do banco de dados a ser utilizado.
 y = amostra de dna a ser utilizada.
 
 Exemplo: ./dna_profiler -d data/data.csv -s data/sequence_alice.txt
+
+Ou apenas use o Makefile para facilitar sua vida!
